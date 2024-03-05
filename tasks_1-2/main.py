@@ -33,5 +33,3 @@ def get_shop_list_by_dishes(dishes, person_count):
     return shop_list
 
 print(get_shop_list_by_dishes(['Обитатель утёсов', 'Фаттро', 'Татуинский закат'], 3))
-
-    # print(f.readline().strip())

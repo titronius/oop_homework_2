@@ -9,7 +9,6 @@ for file_name in files_names:
         string_array = [file_name] + [str(len(string_array))] + string_array
         list_of_string.append(string_array)
 
-
 list_of_string.sort(key = lambda part:part[1])
 
 final_string = ""
