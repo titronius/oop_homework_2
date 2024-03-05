@@ -17,9 +17,7 @@ with open('files/recipes.txt') as f:
         if "|" in strip_line:
             ingredient = strip_line.split(' | ')
             cook_book[receipt_name].append({'ingredient_name': ingredient[0], 'quantity': int(ingredient[1]), 'measure': ingredient[2]})
-        elif is_number(strip_line):
-            pass
-        elif strip_line != "":
+        elif strip_line != "" and not is_number(strip_line):
             cook_book[strip_line] = []
 
 def get_shop_list_by_dishes(dishes, person_count):
